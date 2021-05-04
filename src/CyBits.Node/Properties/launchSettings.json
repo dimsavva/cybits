@@ -1,0 +1,42 @@
+{
+  "profiles": {
+    "CY (MAIN)": {
+      "commandName": "Project"
+    },
+    "CY (TEST)": {
+      "commandName": "Project",
+      "commandLineArgs": "-testnet"
+    },
+    "CY (MAIN/RPC)": {
+      "commandName": "Project",
+      "commandLineArgs": "-server -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser"
+    },
+    "CY (TEST/RPC)": {
+      "commandName": "Project",
+      "commandLineArgs": "-server -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -testnet"
+    },
+    "CY (MAIN/LOCAL/RPC)": {
+      "commandName": "Project",
+      "commandLineArgs": "-server -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -datadir=nodedata"
+    },
+    "CY (TEST/LOCAL/RPC)": {
+      "commandName": "Project",
+      "commandLineArgs": "-server -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -datadir=nodedata -testnet"
+    },
+    "CY (MAIN/LOCAL/RPC/DEFAULT)": {
+      "commandName": "Project",
+      "commandLineArgs": "-server -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -datadir=nodedata -defaultwalletname=default -defaultwalletpassword=default -unlockdefaultwallet -server"
+    },
+    "CY (TEST/LOCAL/RPC/DEFAULT)": {
+      "commandName": "Project",
+      "commandLineArgs": "-server -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -datadir=nodedata -defaultwalletname=default -defaultwalletpassword=default -unlockdefaultwallet -server -testnet"
+    },
+    "CY (TEST/NO ASSUME VALID)": {
+      "commandName": "Project",
+      "commandLineArgs": "-testnet -assumevalid=0 -checkpoints=false"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

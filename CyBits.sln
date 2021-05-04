@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{BAAF8579-95B4-4397-B7D1-E98CA65162F4}") = "CyBits.Node", "src\CyBits.Node\CyBits.Node.csproj", "{F7778B3F-63B4-45D9-B782-A1B9F4002458}"
+EndProject
+Project("{BAAF8579-95B4-4397-B7D1-E98CA65162F4}") = "CyBits", "src\CyBits\CyBits.csproj", "{A3E545CF-DC02-4A10-AC03-F605128F07BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7778B3F-63B4-45D9-B782-A1B9F4002458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7778B3F-63B4-45D9-B782-A1B9F4002458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7778B3F-63B4-45D9-B782-A1B9F4002458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7778B3F-63B4-45D9-B782-A1B9F4002458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E545CF-DC02-4A10-AC03-F605128F07BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E545CF-DC02-4A10-AC03-F605128F07BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E545CF-DC02-4A10-AC03-F605128F07BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E545CF-DC02-4A10-AC03-F605128F07BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E371943E-9AAF-4886-A1D1-7CB3BA10791E}
+	EndGlobalSection
+EndGlobal
