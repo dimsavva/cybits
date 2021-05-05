@@ -36,7 +36,10 @@
       "commandLineArgs": "-testnet -assumevalid=0 -checkpoints=false"
     },
     "Docker": {
-      "commandName": "Docker"
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true
+
     }
   }
 }

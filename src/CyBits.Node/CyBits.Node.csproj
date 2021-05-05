@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
    <PropertyGroup>
       <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -7,6 +7,10 @@
       <OutputType>Exe</OutputType>
       <Authors>Blockcore</Authors>
    </PropertyGroup>
+
+  <PropertyGroup>
+    <DockerfileRunArguments>-p 15001-15003:15001-15003</DockerfileRunArguments>
+  </PropertyGroup>
 
    <PropertyGroup>
       <LangVersion>latest</LangVersion>
