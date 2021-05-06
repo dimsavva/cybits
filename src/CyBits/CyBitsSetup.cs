@@ -18,13 +18,13 @@ namespace CyBits
          Magic = "01-4D-59-43",
          CoinType = 3601, // SLIP-0044: https://github.com/satoshilabs/slips/blob/master/slip-0044.md,
          PremineReward = 1000000,
-         PoWBlockReward = 10,
-         PoSBlockReward = 10,
-         LastPowBlock = 150,
+         PoWBlockReward = 30,
+         PoSBlockReward = 30,
+         LastPowBlock = 400,
          GenesisText = "Cybits Blockchain", // The New York Times, 2020-04-16
-         TargetSpacing = TimeSpan.FromSeconds(20),
-         ProofOfStakeTimestampMask = 0x0000000F, // 0x0000003F // 64 sec
-         PoSVersion = 3
+         TargetSpacing = TimeSpan.FromSeconds(45),
+         ProofOfStakeTimestampMask = 0x0000002C, // 0x0000003F // 45 sec
+         PoSVersion = 4
       };
 
       internal NetworkSetup Main = new NetworkSetup
@@ -45,8 +45,8 @@ namespace CyBits
          GenesisReward = Money.Zero,
          HashGenesisBlock = "00000ad5fd7641b4fe175234a90a453f987ff4b160e4e3d48b6fcd1fd9799f8c",
          HashMerkleRoot = "3c8573178b1637d5e9d7746daee99bf52db4ccc01b4bda2c216571b6c2bc3b7b",
-         DNS = new[] { "jnbglass.co.za" },
-         Nodes = new[] { "144.91.123.46" },
+         DNS = new[] { "seed1.cybits.org", "seed2.cybits.org" },
+         Nodes = new[] { "144.91.123.46", "161.97.135.78" },
          Checkpoints = new Dictionary<int, CheckpointInfo>
          {
             // TODO: Add checkpoints as the network progresses.
@@ -71,9 +71,9 @@ namespace CyBits
          GenesisReward = Money.Zero,
          HashGenesisBlock = "00007e7f4c2a734695b076d3927c4a627af7f946cbb4f3fdc66c700706d4148a",
          HashMerkleRoot = "067e5bd89bfe3f94e088bbd4f775aba4ca9cbcd3b75c91bcb948c3ccd0ab69d9",
-         DNS = new[] { "seedregtest1.cy.blockcore.net", "seedregtest2.cy.blockcore.net", "seedregtest.cy.blockcore.net" },
-         Nodes = new[] { "144.91.123.46"},
-         Checkpoints = new Dictionary<int, CheckpointInfo>
+         DNS = new[] { "seed1.cybits.org", "seed2.cybits.org" },
+         Nodes = new[] { "144.91.123.46", "161.97.135.78" },
+          Checkpoints = new Dictionary<int, CheckpointInfo>
          {
             // TODO: Add checkpoints as the network progresses.
          }
@@ -97,9 +97,9 @@ namespace CyBits
          GenesisReward = Money.Zero,
          HashGenesisBlock = "0004503eeed5d597a48caadfe87799d6dc340bcc105d50f959556f50aece4594",
          HashMerkleRoot = "f66e1dc80782df2046a24eb862928d66c884734cfbd6adabc2dd78de87b3b9fc",
-         DNS = new[] { "seedtest1.cy.blockcore.net", "seedtest2.cy.blockcore.net", "seedtest.cy.blockcore.net" },
-         Nodes = new[] { "144.91.123.46", "24.24.24.24" },
-         Checkpoints = new Dictionary<int, CheckpointInfo>
+         DNS = new[] { "seed1.cybits.org", "seed2.cybits.org" },
+         Nodes = new[] { "144.91.123.46", "161.97.135.78" },
+          Checkpoints = new Dictionary<int, CheckpointInfo>
          {
             // TODO: Add checkpoints as the network progresses.
          }
