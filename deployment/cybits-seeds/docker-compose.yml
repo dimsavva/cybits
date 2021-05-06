@@ -1,0 +1,69 @@
+version: '3.8'
+services:
+ 
+  seed2.cybits.org:
+    image: cybitsnode:latest
+    environment:
+      - VIRTUAL_HOST=seed2.cybits.org
+      - VIRTUAL_PORT=15003
+      - VIRTUAL_PROTO=http
+      - VIRTUAL_NETWORK=cybitsnetwork
+      - LETSENCRYPT_HOST=seed2.cybits.org
+      - LETSENCRYPT_EMAIL=dimsavva@gmail.com
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+
+    restart: always
+    volumes:
+      - /var/cybits/cybits_seed2_data:/root/.blockcore/cybits/CyBitsMain
+    networks: 
+      - cybitsnetwork
+      - commonnetwork
+      
+  seed3.cybits.org:
+    image: cybitsnode:latest
+    environment:
+      - VIRTUAL_HOST=seed3.cybits.org
+      - VIRTUAL_PORT=15003
+      - VIRTUAL_PROTO=http
+      - VIRTUAL_NETWORK=cybitsnetwork
+      - LETSENCRYPT_HOST=seed3.cybits.org
+      - LETSENCRYPT_EMAIL=dimsavva@gmail.com
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+
+    restart: always
+    volumes:
+      - /var/cybits/cybits_seed3_data:/root/.blockcore/cybits/CyBitsMain
+    networks: 
+      - cybitsnetwork
+      - commonnetwork
+      
+  seed4.cybits.org:
+    image: cybitsnode:latest
+    environment:
+      - VIRTUAL_HOST=seed4.cybits.org
+      - VIRTUAL_PORT=15003
+      - VIRTUAL_PROTO=http
+      - VIRTUAL_NETWORK=cybitsnetwork
+      - LETSENCRYPT_HOST=seed4.cybits.org
+      - LETSENCRYPT_EMAIL=dimsavva@gmail.com
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+
+    restart: always
+    volumes:
+      - /var/cybits/cybits_seed4_data:/root/.blockcore/cybits/CyBitsMain
+    networks: 
+      - cybitsnetwork
+      - commonnetwork
+      
+networks:
+  cybitsnetwork:
+    external: false
+    name: cybitsnetwork
+  commonnetwork:
+    external: true
+    name: commonnetwork
+volumes:
+  conf:
+  vhost:
+  html:
+  certs:

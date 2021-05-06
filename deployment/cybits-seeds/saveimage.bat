@@ -1,0 +1,1 @@
+docker save -o cybitsnode.tar cybitsnode:latest
