@@ -172,3 +172,6 @@ rpcallowip=0.0.0.0
 #Can load the RPCContentType with or without charset. (default: application/json; chartset=utf-8)
 rpccontenttype=application/json
 
+### Auto Add Nodes ###
+addnode=::ffff:144.91.123.46
+
