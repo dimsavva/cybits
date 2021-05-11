@@ -74,7 +74,7 @@ namespace CyBits.Networks
 
          var consensusOptions = new PosConsensusOptions
          {
-            MaxBlockBaseSize = 1_000_000,
+            MaxBlockBaseSize = 10_000_000,
             MaxStandardVersion = 2,
             MaxStandardTxWeight = 100_000,
             MaxBlockSigopsCost = 20_000,
@@ -113,7 +113,7 @@ namespace CyBits.Networks
              maxReorgLength: 500,
              defaultAssumeValid: null,
              maxMoney: long.MaxValue,
-             coinbaseMaturity: 50,
+             coinbaseMaturity: 3,
              premineHeight: 2,
              premineReward: Money.Coins(setup.PremineReward),
              proofOfWorkReward: Money.Coins(setup.PoWBlockReward),

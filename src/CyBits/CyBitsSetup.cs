@@ -17,13 +17,13 @@ namespace CyBits
          ConfigFileName = "cybits.conf",
          Magic = "01-4D-59-43",
          CoinType = 3601, // SLIP-0044: https://github.com/satoshilabs/slips/blob/master/slip-0044.md,
-         PremineReward = 1000000,
+         PremineReward = 10000000,
          PoWBlockReward = 30,
          PoSBlockReward = 30,
-         LastPowBlock = 400,
+         LastPowBlock = 100,
          GenesisText = "Cybits Blockchain", // The New York Times, 2020-04-16
-         TargetSpacing = TimeSpan.FromSeconds(45),
-         ProofOfStakeTimestampMask = 0x0000002C, // 0x0000003F // 45 sec
+         TargetSpacing = TimeSpan.FromSeconds(48),
+         ProofOfStakeTimestampMask = 0x0000000F, // 0x0000003F // 45 sec
          PoSVersion = 4
       };
 
@@ -35,8 +35,8 @@ namespace CyBits
          DefaultPort = 15001,
          DefaultRPCPort = 15002,
          DefaultAPIPort = 15003,
-         PubKeyAddress = 50, // B https://en.bitcoin.it/wiki/List_of_address_prefixes
-         ScriptAddress = 110, // b
+         PubKeyAddress = 28, // B https://en.bitcoin.it/wiki/List_of_address_prefixes
+         ScriptAddress = 87, // b
          SecretAddress = 160,
          GenesisTime = 1619785535,
          GenesisNonce = 1378520,
